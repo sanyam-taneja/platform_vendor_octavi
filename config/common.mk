@@ -102,6 +102,9 @@ include vendor/octavi/config/octavi_audio.mk
 # Include Google fonts
 include vendor/octavi/config/fonts.mk
 
+# Include Packages
+include vendor/octavi/config/packages.mk
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include vendor/octavi/config/twrp.mk
@@ -128,7 +131,7 @@ PRODUCT_PACKAGES += \
     Exchange2 \
     Terminal
 
-# Extra tools in Octavi
+# Extra tools
 PRODUCT_PACKAGES += \
     7z \
     awk \
