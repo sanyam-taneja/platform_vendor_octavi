@@ -98,6 +98,9 @@ include vendor/octavi/config/aosp_audio.mk
 # Include Octavi audio files
 include vendor/octavi/config/octavi_audio.mk
 
+# Include Google fonts
+include vendor/octavi/config/fonts.mk
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include vendor/octavi/config/twrp.mk
