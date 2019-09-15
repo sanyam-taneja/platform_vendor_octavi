@@ -1,3 +1,9 @@
+# Build fingerprint
+ifneq ($(BUILD_FINGERPRINT),)
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+endif
+
 # Octavi-OS System Version
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.octavi.buildtype=$(OCTAVI_BUILD_TYPE) \
