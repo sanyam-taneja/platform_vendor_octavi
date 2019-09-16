@@ -1,19 +1,12 @@
-# LineageOS System Version
+# Octavi-OS System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
-
-# LineageOS Platform Display Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
-
-# LineageOS Platform SDK Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
-
-# LineageOS Platform Internal Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.octavi.buildtype=$(OCTAVI_BUILD_TYPE) \
+    ro.octavi.build.date=$(OCTAVI_BUILD_DATE) \
+    ro.octavi.display.version=$(OCTAVI_DISPLAY_VERSION) \
+    ro.octavi.build.version=$(OCTAVI_BUILD_VERSION) \
+    ro.octavi.release.version=$(OCTAVI_RELEASE_VERSION) \
+    ro.octavi.version=$(OCTAVI_VERSION) \
+    ro.modversion=$(OCTAVI_MOD_VERSION) \
+    org.octavi.fingerprint=$(OCTAVI_FINGERPRINT)
+    ro.octavi.releasetype=$(OCTAVI_BUILD_TYPE) \
+    ro.octavi.version=$(OCTAVI_VERSION)

@@ -1,5 +1,4 @@
-# Copyright (C) 2017 Unlegacy-Android
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,13 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# -----------------------------------------------------------------
-# Octavi-OS OTA update package
+$(call inherit-product, build/target/product/aosp_x86_64.mk)
 
-OCTAVI_TARGET_PACKAGE := $(PRODUCT_OUT)/$(OCTAVI_BUILD_VERSION).zip
+include vendor/zenx/build/target/product/zenx_generic_target.mk
 
-.PHONY: bacon
-bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(OCTAVI_TARGET_PACKAGE)
-	$(hide) $(MD5SUM) $(OCTAVI_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(OCTAVI_TARGET_PACKAGE).md5sum
-	@echo "Package Complete: $(OCTAVI_TARGET_PACKAGE)" >&2
+PRODUCT_NAME := zenx_x86_64

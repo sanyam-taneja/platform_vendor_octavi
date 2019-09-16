@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include Octavi-OS versions
+include $(TOPDIR)vendor/octavi/build/core/main_version.mk
