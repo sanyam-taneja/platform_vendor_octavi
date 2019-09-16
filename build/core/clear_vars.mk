@@ -1,4 +1,4 @@
 #
-# Lineage-specific variable clears
+# Octavi-specific variable clears
 #
 LOCAL_IGNORE_SUBDIR :=
