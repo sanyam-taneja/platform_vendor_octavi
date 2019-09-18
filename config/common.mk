@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 # This is Octavi!
 PRODUCT_COPY_FILES += \
     vendor/octavi/config/permissions/privapp-permissions-octavi.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-octavi.xml \
-    vendor/octavi/config/permissions/privapp-permissions-octavi-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-octavi.xml \
+    vendor/octavi/config/permissions/privapp-permissions-octavi-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-octavi.xml
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
