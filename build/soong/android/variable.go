@@ -24,6 +24,9 @@ type Product_variables struct {
 	Should_wait_for_qsee struct {
 		Cflags []string
 	}
+	Supports_extended_compress_format struct {
+		Cflags []string
+	}
 	Supports_hw_fde struct {
 		Cflags []string
 		Header_libs []string
@@ -68,6 +71,7 @@ type ProductVariables struct {
 	Target_needs_netd_direct_connect_rule  *bool `json:",omitempty"`
 	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
+	Supports_extended_compress_format  *bool `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
