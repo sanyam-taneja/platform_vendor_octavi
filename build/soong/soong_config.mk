@@ -13,6 +13,7 @@ $(call add_json_bool, Has_legacy_camera_hal1, $(filter true,$(TARGET_HAS_LEGACY_
 $(call add_json_bool, Needs_camera_boottime_timestamp, $(filter true,$(TARGET_CAMERA_BOOTTIME_TIMESTAMP)))
 $(call add_json_bool, Target_needs_netd_direct_connect_rule, $(filter true,$(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)))
 $(call add_json_bool, Target_ignores_ftp_pptp_conntrack_failure, $(filter true,$(TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE)))
+$(call add_json_str_omitempty, Qcom_um_soong_namespace, $(if $(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),$(QCOM_SOONG_NAMESPACE),))
 $(call add_json_bool, Should_wait_for_qsee, $(filter true,$(TARGET_KEYMASTER_WAIT_FOR_QSEE)))
 $(call add_json_str, Specific_camera_parameter_library, $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY))
 $(call add_json_bool, Supports_extended_compress_format, $(filter true,$(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)))
