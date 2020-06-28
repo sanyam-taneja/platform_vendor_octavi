@@ -60,17 +60,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/octavi/config/permissions/octavi-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/octavi-sysconfig.xml
 
-# init.d support
-PRODUCT_COPY_FILES += \
-    vendor/octavi/prebuilt/common/etc/init.d/00banner:$(TARGET_COPY_OUT_SYSTEM)/etc/init.d/00banner \
-    vendor/octavi/prebuilt/common/bin/sysinit:$(TARGET_COPY_OUT_SYSTEM)/bin/sysinit
-
-ifneq ($(TARGET_BUILD_VARIANT),user)
-# userinit support
-PRODUCT_COPY_FILES += \
-    vendor/octavi/prebuilt/common/etc/init.d/90userinit:$(TARGET_COPY_OUT_SYSTEM)/etc/init.d/90userinit
-endif
-
 # Copy all Octavi-specific init rc files
 $(foreach f,$(wildcard vendor/octavi/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
