@@ -18,7 +18,7 @@ type Product_variables struct {
 		Cflags []string
 		Srcs []string
 	}
-	Needs_netd_direct_connect_rule struct {
+	Target_needs_netd_direct_connect_rule struct {
 		Cflags []string
 	}
 	Should_wait_for_qsee struct {
@@ -65,7 +65,7 @@ type ProductVariables struct {
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_camera_boottime_timestamp  *bool `json:",omitempty"`
-	Needs_netd_direct_connect_rule  *bool `json:",omitempty"`
+	Target_needs_netd_direct_connect_rule  *bool `json:",omitempty"`
 	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
