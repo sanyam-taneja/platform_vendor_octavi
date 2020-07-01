@@ -101,6 +101,9 @@ include vendor/octavi/config/fonts.mk
 # Include Packages
 include vendor/octavi/config/packages.mk
 
+# Include Bootanimation
+include vendor/octavi/config/bootanimation.mk
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include vendor/octavi/config/twrp.mk
@@ -122,7 +125,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ExactCalculator \
     Exchange2 \
-    Terminal
+    Terminal \
+    ThemePicker
 
 # Charger
 PRODUCT_PACKAGES += \
