@@ -1,11 +1,11 @@
-# Inherit full common ZenX stuff
-$(call inherit-product, vendor/zenx/config/common_full.mk)
+# Inherit full common octavi stuff
+$(call inherit-product, vendor/octavi/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
-# Include ZenX LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/zenx/overlay/dictionaries
+# Include octavi LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/octavi/overlay/dictionaries
 
-$(call inherit-product, vendor/zenx/config/telephony.mk)
+$(call inherit-product, vendor/octavi/config/telephony.mk)
