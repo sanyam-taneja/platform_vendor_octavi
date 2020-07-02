@@ -11,4 +11,11 @@ PRODUCT_PACKAGES += \
     AccentColorFlatPinkOverlay \
     AccentColorCyanOverlay \
     AccentColorBlueGrayOverlay \
-    AccentColorMintOverlay
+    AccentColorMintOverlay \
+    AccentColorBlueOverlay \
+    AccentColorBurningRedOverlay \
+    AccentColorDeepOrangeOverlay \
+    AccentColorLightBlueOverlay \
+    AccentColorOneplusRedOverlay \
+    AccentColorOrangeOverlay \
+    AccentColorPixelBlueOverlay
